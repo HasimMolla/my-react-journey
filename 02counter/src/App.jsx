@@ -18,20 +18,20 @@ function App() {
     setCounter(counter + 1)
     if (counter === 20) {
       setCounter(20)
-    } 
+    }
     console.log("clicked", counter);
-    
+
 
   }
   const removeValue = () => {
-    setCounter(counter - 1) 
-  if (counter === 0) {
-    setCounter(0)
-  }
+    setCounter(counter - 1)
+    if (counter === 0) {
+      setCounter(0)
+    }
     console.log("clicked", counter);
-    
+
   }
-  
+
   return (
     <>
       <h1>Click the button to update counter value</h1>
