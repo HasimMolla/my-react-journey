@@ -1,10 +1,13 @@
 // import React from 'react'
 import { FaRegFileAlt } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
-function Card() {
+import { motion } from "framer-motion"
+// import { IoClose } from "react-icons/io5";
+function Card({ reference }) {
+
   return (
     <>
-      <div className='relative overflow-hidden w-60 h-72 rounded-[35px] bg-zinc-900 text-white p-6'>
+      <motion.div drag dragConstraints={reference} whileDrag={{ scale: 1.2 }} dragElastic={0.2} dragTransition={{ bounceStiffness: 600, bounceDamping: 4 }} className='relative overflow-hidden w-60 h-72 rounded-[35px] bg-zinc-900 text-white p-6 hover:cursor-grab'>
         <FaRegFileAlt />
         <p className="font-base mt-[20px] leading-tight text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <div className="footer absolute bottom-0 w-full left-0">
@@ -20,7 +23,7 @@ function Card() {
 
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
