@@ -4,12 +4,27 @@ import { useRef } from 'react'
 import Card from './Card'
 
 function Foreground() {
-  const data = [{
+  const data = [
+    {
     decs: 'This is a mini docs webApps, In future i will add a form where user add their data.',
     filesize: '.4mb',
     close: true,
-    tag: { isOpen: true, tagTitle: "Download Now", tagColor: 'green' },
-  }];
+    tag: { isOpen: true, tagTitle: "Download Now", tagColor: 'green' }
+    },
+    {
+      decs: 'This is a normal docs webApps but I will update day by day.',
+    filesize: '.2mb',
+    close: false,
+      tag: {
+        isOpen: false, tagTitle: "Open now", tagColor: 'green' }
+    },
+    {
+    decs: 'This is a mini docs webApps, In future i will add a form where user add their data.',
+    filesize: '.6mb',
+    close: true,
+      tag: { isOpen: true, tagTitle: "Open now", tagColor: 'blue' }
+    }
+  ];
   const ref = useRef(null)
   return (
     <>
