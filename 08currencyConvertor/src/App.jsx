@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './App.css'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1 className=' bg-orange-500 text-3xl text-center'>Currency Convertor App</h1>
+      <h1 className=' bg-orange-500 text-3xl p-4 text-center'>Currency Convertor App</h1>
     </>
   )
 }
