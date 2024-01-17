@@ -1,7 +1,6 @@
 // import './App.css'
 import { useState } from 'react';
 import { InputBox } from './components'
-import seCurrencyInfo from './hooks/useCurrencyInfo'
 import useCurrencyInfo from './hooks/useCurrencyInfo';
 
 function App() {
@@ -56,10 +55,10 @@ function App() {
             <div className="relative w-full h-0.5">
               <button
                 type="button"
-                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-lg text-white px-2 py-0.5"
+                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-gray-200 md:text-3xl  text-blue-600 px-2 py-0.5"
                  onClick={swap}
               >
-                swap
+                ↑↓
               </button>
             </div>
             <div className="w-full mt-1 mb-4">
