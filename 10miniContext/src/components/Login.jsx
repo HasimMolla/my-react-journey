@@ -12,7 +12,7 @@ function Login() {
     setUser({ username, password })
   }
   return (
-    <div className='border border-gray-400 p-4 m-6 rounded-xl'>
+    <div className='border border-gray-400 h-[300px] py-4 bg-gray-800 mt-6 mb-2 rounded-xl'>
       <h2 className='text-xl font-bold'>Login</h2>
       <input className='m-4 px-4 py-2 rounded-lg border border-gray-400 outline-none' type="text" placeholder='username' value={username} onChange={(e) => setUsername(e.target.value)} />
       <br />
